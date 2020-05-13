@@ -34,6 +34,7 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
    
    
    #### for Apache Kafka:
+   
    kafka = module.Api('ApasheKafka').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
                  project_id (for PubSub), bootstrap_servers (for Kafka)
    
