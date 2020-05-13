@@ -14,7 +14,10 @@ Client libraries used in this API:
     ```
     git clone https://github.com/alexanch/kafka-pubsub-api.git
     ```
-2. change dir: cd kafka-pubsub-api
+2. change dir: 
+    ```
+    cd kafka-pubsub-api
+    ```
 1. in terminal, write:
     ```
     pip install -r requirements.txt
@@ -23,11 +26,11 @@ Client libraries used in this API:
     ```
     ipython
     ```
-3. Import module:
+3. Import API module:
     ```
     import module
     ```
-4. Choose API:
+4. Load API of choise:
    ```
    #### for Cloud Pub/Sub:
    
