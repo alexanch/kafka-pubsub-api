@@ -24,13 +24,15 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
 4. Choose API:
    ```
    # for Cloud Pub/Sub:
-   pubsub = module.Api('CloudPubSub').select()
+   pubsub = module.Api('CloudPubSub').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
+                 project_id (for PubSub), bootstrap_servers (for Kafka)
    # methods:
    pubsub.pub(data = b'data') # any binary data can be passed
    pubsub.sub(sub_name) # pass subscriber's name
    
    # for Apache Kafka:
-   kafka = module.Api('ApasheKafka').select()
+   kafka = module.Api('ApasheKafka').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
+                 project_id (for PubSub), bootstrap_servers (for Kafka)
    # methods:
    kafka.pub(data = b'data') # any binary data can be passed
    kafka.sub(sub_name) # pass subscriber's name
