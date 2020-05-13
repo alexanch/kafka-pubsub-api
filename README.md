@@ -31,9 +31,8 @@ Client libraries used in this API:
     import module
     ```
 4. Load API of choise:
+   - for Cloud Pub/Sub:
    ```
-   #### for Cloud Pub/Sub:
-   
    pubsub = module.Api('CloudPubSub').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
                  project_id (for PubSub), bootstrap_servers (for Kafka)
    
@@ -41,9 +40,9 @@ Client libraries used in this API:
    pubsub.pub(data = b'data') # any binary data can be passed
    pubsub.sub(sub_name) # pass subscriber's name
    
-   
-   #### for Apache Kafka:
-   
+    ```
+   - For Apache Kafka:
+    ```
    kafka = module.Api('ApasheKafka').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
                  project_id (for PubSub), bootstrap_servers (for Kafka)
    
