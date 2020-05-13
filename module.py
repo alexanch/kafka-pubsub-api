@@ -105,7 +105,7 @@ class ApacheKafka:
         self.topic = topic
         self.bootstrap_servers = bootstrap_servers
 
-    def kafka_producer(self, data):
+    def pub(self, data):
         """
         Kafka Producer
         Reference: https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html
@@ -118,7 +118,7 @@ class ApacheKafka:
         producer.send(self.topic, data)
         # producer.send(topic, key=b'message-two', value=b'This is Kafka-Python')
 
-    def kafka_consumer(self, sub_name='MY_SUBSCRIPTION_NAME'):
+    def sub(self, sub_name='MY_SUBSCRIPTION_NAME'):
         """
         Kafka Consumer
         Reference: https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html
