@@ -10,19 +10,19 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
     """
 2. change dir: cd kafka-pubsub-api
 1. in terminal, write:
-    """
+    ```
     pip install -r requirements.txt
-    """
+    ```
 2. launch iPython in terminal:
-    """
+    ```
     ipython
-    """
+    ```
 3. Import module:
-    """
+    ```
     import module
-    """
+    ```
 4. Choose API:
-   """
+   ```
    # for Cloud Pub/Sub:
    pubsub = module.Api('CloudPubSub').select()
    # methods:
@@ -34,4 +34,4 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
    # methods:
    kafka.pub(data = b'data') # any binary data can be passed
    kafka.sub(sub_name) # pass subscriber's name
-   """
+   ```
