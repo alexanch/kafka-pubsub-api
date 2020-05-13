@@ -34,8 +34,8 @@ Client libraries used in this API:
 
    <b>Cloud Pub/Sub:</b>
    ```
-   pubsub = module.Api('CloudPubSub').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
-                 project_id (for PubSub), bootstrap_servers (for Kafka)
+   # Api arguments: api_type, topic, path to JSON key for authorization, project_id (for PubSub)
+   pubsub = module.Api('CloudPubSub').select()   
    
    # methods:
    pubsub.pub(data = b'data') # any binary data can be passed
@@ -44,8 +44,8 @@ Client libraries used in this API:
     ```
    <b>Apache Kafka:</b>
     ```
-   kafka = module.Api('ApasheKafka').select()   # Api arguments: api_type, topic, JSON key path (for PubSub),
-                 project_id (for PubSub), bootstrap_servers (for Kafka)
+   # Api arguments: api_type, topic, bootstrap_servers (for Kafka)
+   kafka = module.Api('ApasheKafka').select()   
    
    # methods:
    kafka.pub(data = b'data') # any binary data can be passed
