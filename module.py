@@ -6,18 +6,8 @@ from google.auth import jwt
 import _pickle
 
 """
-This is a library for Apache Kafka or Google Pub/Sub
-# There are several options to create Producer And Consumer for Apache Kafka:
-    # Command line client provided as default by Kafka
-    # kafka-python (chosen one)
-    # PyKafka
-    # confluent-kafka
-
+This is a library for Apache Kafka or Google Pub/Sub.
 """
-
-
-# topic
-# subscription id
 
 class CloudPubSub:
     def __init__(self, topic='test', project_id='b-fashion',
@@ -138,9 +128,6 @@ class ApacheKafka:
             print(message)
 
 
-# here we should pass the class:
-
-
 class Api:
     """
     Unified API: you can choose between Cloud PubSub or Apache Kafka. Pass the params accordingly.
@@ -180,20 +167,9 @@ where an increase in the number of topics, subscriptions,
 or messages can be handled by increasing the number of instances of running servers.
 """
 
-# API(method=pub/sub, app=kafka/gcp, topic='', message='', request_type=JSON/REST)
-
 # Publishers can be any application that can make HTTPS requests to pubsub.googleapis.com:
 # an App Engine app, a web service hosted on Google Compute Engine or any other third-party network,
 # an app installed on a desktop or mobile device, or even a browser.
 
-# check for errors
 # optional attributes
-# convert to bytes before/after?
-# print a message about the result to console
 
-
-####### get message
-# input: topic, method = pushing/pulling
-
-# Pull subscribers can also be any application that can make HTTPS requests to pubsub.googleapis.com.
-# Push subscribers must be Webhook endpoints that can accept POST requests over HTTPS.
