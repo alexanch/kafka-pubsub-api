@@ -5,9 +5,9 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
 ### How to use:
 
 1. Git clone the repo:
-    """
+    ```
     git clone https://github.com/alexanch/kafka-pubsub-api.git
-    """
+    ```
 2. change dir: cd kafka-pubsub-api
 1. in terminal, write:
     ```
