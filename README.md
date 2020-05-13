@@ -51,6 +51,4 @@
    kafka.pub(data = b'data') # any binary data can be passed
    kafka.sub(sub_name) # pass subscriber's name
    ```
-  
-  Video: 
-  
+ 
