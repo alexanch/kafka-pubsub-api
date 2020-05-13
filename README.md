@@ -1,5 +1,11 @@
 # kafka-pubsub-api
-API to send/receive requests from Apache Kafka/Google Pub/Sub 
+
+Unified API to send/receive requests from Apache Kafka/Google Pub/Sub 
+
+Client libraries used in this API: 
+- [[Python Client for Google Cloud Pub / Sub]](https://googleapis.dev/python/pubsub/latest/index.html)
+- [[kafka-python API]](https://kafka-python.readthedocs.io/en/master/apidoc/modules.html)
+
 
 
 ### How to use:
@@ -42,3 +48,6 @@ API to send/receive requests from Apache Kafka/Google Pub/Sub
    kafka.pub(data = b'data') # any binary data can be passed
    kafka.sub(sub_name) # pass subscriber's name
    ```
+  
+  Video: 
+  
